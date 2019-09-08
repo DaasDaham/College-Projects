@@ -1,2 +1,3 @@
-# College-Projects
-Mini projects on which I have worked till now
+# Mini-Projects
+A few mini projects that I have done
+

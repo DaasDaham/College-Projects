@@ -1,4 +1,4 @@
-My attempt at making my own shell. Run the makefile to compile the files and then run the binary.
+My attempt at making my own shell as a part of an assignment. Run the makefile to compile the files and then run the binary.
 
 I have made 5 files which contain external (ls, mkdir, rm, etc.) commands and one header file and one file which contains the main() function.
 

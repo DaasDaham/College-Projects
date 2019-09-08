@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Pacifico|Bangers|Rancho');
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=anaglyph|3d-float');
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=ice|3d-float');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Permanent+Marker|Luckiest+Guy|Russo+One');
+
+html {
+  background-color: #000000;
+}
+.font-effect-anaglyph{
+      font-family: 'Bangers', cursive;
+      font-size: 200px;
+      margin: 0px 0px 0px 150px;
+}
+.font-effect-ice{
+      font-family: 'Permanent Marker', cursive;
+      font-size: 80px;
+      margin: 0px ;
+}
+.ins{
+  background-color: #FCA816;
+  cursor: pointer;
+  padding: 12px;
+  width: 50%;
+  margin: 0px 0px 0px 350px;
+  border: none;
+  border-radius:30px;
+  text-align: middle;
+  font-family: 'Luckiest Guy', cursive;
+  outline: none;
+  font-size: 35px;
+}
+.Pop{
+  display:none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+.page{
+  background-color:#26E83F;
+  font-family: 'Russo One', sans-serif;
+  font-size: 35px;
+  margin: 10% auto;
+  width:100%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:resopen;
+  animation-duration:1s;
+}
+.page .img{
+  width : 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: middle;
+}
+.meme{
+  background-color: #FCA816;
+  cursor: pointer;
+  padding: 30px;
+  height: 200px;
+  width: 200px;
+  margin:75px 0px 0px 30px;
+  border: none;
+  border-radius:50%;
+  text-align: middle;
+  font-family: 'Luckiest Guy', cursive;
+  outline: none;
+  font-size: 35px;
+}
+.content{
+  display:none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+.page1{
+  background-color:#26E83F;
+  font-family: 'Russo One', sans-serif;
+  font-size: 35px;
+  margin: 10% auto;
+  width:100%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:resopen;
+  animation-duration:1s;
+}
+.meme2{
+  background-color: #FCA816;
+  cursor: pointer;
+  padding: 30px;
+  height: 200px;
+  width: 200px;
+  margin:75px 0px 0px 350px;
+  border: none;
+  border-radius:50%;
+  text-align: middle;
+  font-family: 'Luckiest Guy', cursive;
+  outline: none;
+  font-size: 35px;
+}
+.content1{
+  display:none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+.page2{
+  background-color:#26E83F;
+  font-family: 'Russo One', sans-serif;
+  font-size: 35px;
+  margin: 10% auto;
+  width:100%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:resopen;
+  animation-duration:1s;
+}
+.meme3{
+  background-color: #FCA816;
+  cursor: pointer;
+  padding: 30px;
+  height: 200px;
+  width: 200px;
+  margin:75px 0px 0px 350px;
+  border: none;
+  border-radius:50%;
+  text-align: middle;
+  font-family: 'Luckiest Guy', cursive;
+  outline: none;
+  font-size: 35px;
+}
+.content2{
+  display:none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+.page3{
+  background-color:#26E83F;
+  font-family: 'Russo One', sans-serif;
+  font-size: 35px;
+  margin: 10% auto;
+  width:100%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:resopen;
+  animation-duration:1s;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+.modala {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contenta {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.closea {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closea:hover,
+.closea:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-headera {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-bodya {padding: 2px 16px;}
+
+.modal-footera {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+.modalb {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contentb {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.closeb {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeb:hover,
+.closeb:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-headerb {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-bodyb {padding: 2px 16px;}
+
+.modal-footerb {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+.re{
+  display:none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+.res1{
+  background-color:#26E83F;
+  font-family: 'Russo One', sans-serif;
+  font-size: 35px;
+  margin: 10% auto;
+  width:100%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:resopen;
+  animation-duration:1s;
+}
+.re1{
+  display:none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+.res2{
+  background-color:#26E83F;
+  font-family: 'Russo One', sans-serif;
+  font-size: 35px;
+  margin: 10% auto;
+  width:100%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:resopen;
+  animation-duration:1s;
+}
+.che{
+  display:none;
+  position: fixed;
+   top:0px;
+    left:0px;
+    z-index:1000;
+  align-content: middle;
+  height:100%; 
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+.chea{
+  background-color:#26E83F;
+  font-family: 'Russo One', sans-serif;
+  font-size: 35px;
+  margin: 10% auto;
+  width:100%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:resopen;
+  animation-duration:1s;
+}

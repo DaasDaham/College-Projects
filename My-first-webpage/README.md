@@ -1,2 +1,1 @@
-# P0
-Project 0
+My attempt at making my first website
